@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8">
+    <title>Vue方法与事件</title>
+    <script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="test">
+      <button @click="sayHi">说你好</button>
+      <button @click="sayHi">说我被点击了</button>
+    </div>
+    <script type="text/javascript">
+      var myVue = new Vue({
+        el: '#test',
+        methods: {   
+          sayHi: function () {
+            alert("111")
+          }
+        }
+      })
+    </script>
+
+  </body>
+</html>

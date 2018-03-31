@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>欢迎回来</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<!--初始化样式表-->
+		<link rel="stylesheet" href="css/normalize.css" />
+		<!--基础样式表-->
+		<link rel="stylesheet" href="css/base.css" />
+		<!--引入Vue.js-->
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<!--<div id="app">
+			<p>修改输入框的值，查看效果</p>
+			<p>{{ message }}</p>
+			<input v-model = "message"/>
+		</div>
+		<script src="js/main.js"></script>-->
+		
+		<!--顶部 start-->
+		<header>
+			<div class="header-inner"></div>
+		</header>
+		<!--顶部 end-->
+		<!--container start-->
+		<div class="container">
+			<!--中间 start-->
+			<div class="main">
+				<div class="indexFormFrame">
+					<div class="logo"><img src="img/daxiang.jpg"/></div>
+					<h1 class="login">登录</h1>
+				</div>
+				<div class="login-body">
+					<div class="login-form">
+						<form action="index.html" method="post" autocomplete="on" class="loginForm">
+							<ul>
+								<!--用户名-->
+								<li>
+									<div id="email-wrapper">
+										<input name="username" id="username" placeholder="用户名或电子邮箱" type="text" maxlength="255" />
+									</div>
+								</li>
+								<!--密码-->
+								<li>
+									<div id="email-password">
+										<input v-show="isshow" type="password" name="password" id="password" placeholder="密码" maxlength="255"/>
+									</div>
+								</li>
+								<!--记住我-->
+								<li>
+									<div id="checkbox-container">
+										<input type="checkbox" name="rememberMe" id="rememberMe" value="true"/>
+										<label for="rememberMe">30天内记住我</label>
+									</div>
+								</li>
+								<!--登录按钮-->
+								<li>
+									<div id="loginBtn">
+										<input @click="change" type="button" name="login" id="login" value="继续" />
+									</div>
+								</li>
+								<!--忘记密码-->
+								<li>
+									<div id="forgetPsw">
+										<a href="#" id="forgetPsw-a">忘记密码?</a>									
+									</div>
+								</li>
+								<!--切换-->
+								<li>
+									<div id="switch">
+										<a href="#" class="clearfix">
+											<div id="arrow"class="fl">
+												<img src="img/link-arrow.jpg"/>
+											</div>
+											<div id="switch-text" class="fl">
+												切换到Evernote International
+											</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</form>
+					</div>
+				</div>
+				<div class="context-switch">
+					<div id="noUn">
+						没有账号？
+					</div>
+					<div id="createUn">
+						<a id="createUn-a" href="#">创建账户</a>
+					</div>
+				</div>
+			</div>
+			<!--中间 end-->
+			<!--底部 start-->
+			<footer>
+				<div class="footer-inner clearfix">
+					<div class="copyright">
+						<p>
+							<a href="#">服务条款</a>
+							<span class="space">|</span>
+							<a href="#">隐私政策</a>
+							<span class="space">|</span>
+							<span>版权所有2018 Evernote Corporation。保留所有权利。</span>
+						</p>	
+					</div>
+				</div>
+			</footer>
+			<!--底部 end-->
+		</div>
+		<!--container end-->
+		
+		<!--script-->
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
